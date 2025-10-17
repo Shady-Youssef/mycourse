@@ -332,9 +332,9 @@ export default function Header() {
           </Box>
           <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 1%</Typography>
         </Box>
-        <Box>
-          <Typography  variant="body1" color="initial">Score</Typography>
-        <Typography component={'span'} variant="body2" color="success">100%</Typography>
+        <Box sx={{display:'flex', flexDirection:'column'}}>
+          <Typography component={'span'} variant="body1" color="initial">  Score</Typography>
+        <Typography sx={{ml:1, mt:1}} component={'span'} variant="body2" color="success">100%</Typography>
         </Box>
       </Box>
     </Card>
@@ -350,9 +350,9 @@ export default function Header() {
           </Box>
           <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 2%</Typography>
         </Box>
-        <Box>
-          <Typography  variant="body1" color="initial">Score</Typography>
-        <Typography component={'span'} variant="body2" color="success">95%</Typography>
+        <Box sx={{display:'flex', flexDirection:'column'}}>
+          <Typography component={'span'} variant="body1" color="initial">  Score</Typography>
+        <Typography sx={{ml:1, mt:1}} component={'span'} variant="body2" color="success">95%</Typography>
         </Box>
       </Box>
     </Card>
@@ -368,9 +368,9 @@ export default function Header() {
           </Box>
           <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 3%</Typography>
         </Box>
-        <Box>
-          <Typography  variant="body1" color="initial">Score</Typography>
-        <Typography component={'span'} variant="body2" color="success">93%</Typography>
+         <Box sx={{display:'flex', flexDirection:'column'}}>
+          <Typography component={'span'} variant="body1" color="initial">  Score</Typography>
+        <Typography sx={{ml:1, mt:1}} component={'span'} variant="body2" color="success">93%</Typography>
         </Box>
       </Box>
     </Card>
@@ -386,9 +386,9 @@ export default function Header() {
           </Box>
           <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 4%</Typography>
         </Box>
-        <Box>
-          <Typography  variant="body1" color="initial">Score</Typography>
-        <Typography component={'span'} variant="body2" color="success">90%</Typography>
+         <Box sx={{display:'flex', flexDirection:'column'}}>
+          <Typography component={'span'} variant="body1" color="initial">  Score</Typography>
+        <Typography sx={{ml:1, mt:1}} component={'span'} variant="body2" color="success">90%</Typography>
         </Box>
       </Box>
     </Card>
@@ -404,9 +404,9 @@ export default function Header() {
           </Box>
           <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 5%</Typography>
         </Box>
-        <Box>
-          <Typography  variant="body1" color="initial">Score</Typography>
-        <Typography component={'span'} variant="body2" color="success">88%</Typography>
+         <Box sx={{display:'flex', flexDirection:'column'}}>
+          <Typography component={'span'} variant="body1" color="initial">  Score</Typography>
+        <Typography sx={{ml:1, mt:1}} component={'span'} variant="body2" color="success">88%</Typography>
         </Box>
       </Box>
     </Card>
