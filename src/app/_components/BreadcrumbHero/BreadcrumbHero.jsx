@@ -51,12 +51,12 @@ export default function BreadcrumbHero() {
       <Typography
       component="h1"
       variant={isMdUp ? 'h3' : 'h4'}
-      sx={{ fontWeight: 600, fontSize:{xs:'1.8rem', md:'3rem'} }}
+      sx={{ fontWeight: 600, fontSize:{xs:'1.6rem', md:'3rem'} }}
       color="initial"
     >
       Starting SEO as your Home
     </Typography>
-      <Typography sx={{ display:{xs:'block', md:'none'}, fontWeight:'600',fontSize:{xs:'1.8rem', md:'3rem'} }} component={'h1'} variant="h4" color="initial">Based Business</Typography>
+      <Typography sx={{ display:{xs:'block', md:'none'}, fontWeight:'600',fontSize:{xs:'1.6rem', md:'3rem'} }} component={'h1'} variant="h4" color="initial">Based Business</Typography>
       </Box>
     </Box>
     </>
