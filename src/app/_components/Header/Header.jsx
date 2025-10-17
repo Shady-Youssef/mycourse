@@ -92,6 +92,10 @@ export default function Header() {
   const handleOpenQuestion = () => setOpenQuestion(true);
   const handleCloseQuestion = () => setOpenQuestion(false);
 
+    const [openComment, setOpenComment] = React.useState(false);
+  const handleOpenComment = () => setOpenComment(true);
+  const handleCloseComment = () => setOpenComment(false);
+
     const [openLeader, setOpenLeader] = React.useState(false);
   const handleOpenLeader = () => setOpenLeader(true);
   const handleCloseLeader = () => setOpenLeader(false);
@@ -131,7 +135,7 @@ export default function Header() {
 </Box>
 
                     
-                  <Box  component={'button'}  sx={{mr:3}} >
+                  <Box  component={'button'}  onClick={handleOpenComment}  sx={{mr:3}} >
               
                 <Tooltip arrow slotProps={{ tooltip:{  sx: {
                     fontSize: '1rem',      
@@ -162,6 +166,39 @@ export default function Header() {
                 </Tooltip>
             
             </Box>
+             <Modal
+  open={openComment}
+  onClose={handleCloseComment}
+  aria-labelledby="modal-modal-title"
+  aria-describedby="modal-modal-description"
+  
+>
+  <Box sx={style}>
+    <Box sx={{position:'static'}}>
+    <Typography sx={{textAlign:'center', mb:4}} id="modal-modal-title" variant="h6" component="h2">
+      Add A Comment
+    </Typography>
+    <Box  sx={{position:'absolute' , top:10, right:0}}>
+      
+                          <Button onClick={()=> handleCloseComment() }> <SpeedDialIcon></SpeedDialIcon></Button>
+                        </Box>
+    </Box>
+    <TextField
+    sx={{mb:2}}
+      variant="outlined"
+      placeholder='Submit your comment'
+      rows={3}
+      multiline
+      fullWidth
+    />
+    <Button color='success' variant='contained' onClick={()=>{
+      toast.success('Your Comment Has Been Submitted');
+      handleCloseComment()
+      } }>
+              Submit
+            </Button>
+  </Box>
+</Modal>
 
         <Box  component={'button'} onClick={handleOpenQuestion} sx={{mr:3}} >
          
