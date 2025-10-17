@@ -51,6 +51,7 @@ export default function Header() {
   const [activeStep, setActiveStep] = React.useState(0);
   const [skipped, setSkipped] = React.useState(new Set());
   const [progress, setProgress] = React.useState(63);
+  
 
 
 
@@ -104,18 +105,31 @@ export default function Header() {
                 <Grid size={{sm:12, md:8}}>
                     
                     <Box
-                        component="video"
-                        src="/header-video.mp4"
-                        controls
-                        poster="/video-cover.png"
-                        preload="metadata"
-                        sx={{
-                        mb:2,
-                        width: '100%',
-                        borderRadius: 2,
-                        ":hover":{cursor:'pointer'}
-                        }}
-                    />
+  sx={{
+    position: { xs: 'sticky', md: 'static' },
+    top: { xs: 0, md: 'auto' },
+    zIndex: 1000,
+    mb: 2,
+    bgcolor: '#000',
+    borderRadius:2,
+    transition: 'all 0.3s ease-in-out',
+  }}
+>
+  <Box
+    component="video"
+    src="/header-video.mp4"
+    controls
+    poster="/video-cover.png"
+    preload="metadata"
+    sx={{
+      width:  '100%',
+      borderRadius: 2,
+    }}
+  />
+
+
+</Box>
+
                     
                   <Box  component={'button'}  sx={{mr:3}} >
               
