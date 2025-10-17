@@ -330,8 +330,8 @@ export default function CourseMaterials() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Course Overview</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="3 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="10 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="3 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant='outlined' label="10 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             
@@ -417,8 +417,8 @@ export default function CourseMaterials() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Course Overview</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="3 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="10 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="3 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant='outlined' label="10 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             
@@ -504,8 +504,8 @@ export default function CourseMaterials() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Course Overview</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="3 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="10 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="2 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant='outlined' label="15 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             

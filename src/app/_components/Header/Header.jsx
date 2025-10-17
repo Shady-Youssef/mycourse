@@ -14,7 +14,7 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
-import toast, { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 import CourseMaterials from '../CourseMaterials/CourseMaterials';
 import Comments from '../Comments/Comments';
 
@@ -52,7 +52,6 @@ export default function Header() {
   const [skipped, setSkipped] = React.useState(new Set());
   const [progress, setProgress] = React.useState(63);
   
-
 
 
   const isStepSkipped = (step) => {
@@ -508,8 +507,8 @@ export default function Header() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Course Overview</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="3 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="10 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="3 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant="outlined" label="10 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             
@@ -588,8 +587,8 @@ export default function Header() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Return Values From Functions</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="3 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="10 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="3 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant='outlined' label="10 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             
@@ -668,8 +667,8 @@ export default function Header() {
                                 <DescriptionOutlinedIcon sx={{mr:1}}></DescriptionOutlinedIcon>
                                 <Typography sx={{fontSize:'1.2rem', mr:1}} variant="body1" color="initial">Return Values From Functions</Typography>
                                 <Box sx={{display:'flex', flexDirection:{xs:'column', md:'row'}}}>
-                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0}}} label="2 QUESTIONS" color="success" /> </Box>
-                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} label="15 MINUTES" color="error" /> </Box>
+                                  <Box   sx={{ mr:1}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem', mb:{xs:1, md:0,}}} variant="outlined"  color='success' label="2 QUESTIONS"  /> </Box>
+                                <Box component={'div'} sx={{fontSize:'1.2rem'}} variant="body1" color="initial">  <Chip sx={{fontSize:'0.8rem'}} variant='outlined' label="15 MINUTES" color="error" /> </Box>
                                 </Box>
                             </Box>
                             
