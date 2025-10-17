@@ -320,35 +320,96 @@ export default function Header() {
     </Box>
 
     <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">Shady Youssef</Typography>
+      <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Box>
+          <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'center', width:'35px', height:'35px',bgcolor:'gold', borderRadius:'50%',mr:1}}>
+            <Typography  variant="body1" color="initial">1</Typography>
+            </Box>
+          <Typography variant="body1" color="initial">Shady Youssef</Typography>
+          </Box>
+          <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 1%</Typography>
+        </Box>
+        <Box>
+          <Typography  variant="body1" color="initial">Score</Typography>
+        <Typography component={'span'} variant="body2" color="success">100%</Typography>
+        </Box>
       </Box>
     </Card>
     <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">John Doe</Typography>
+      <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Box>
+          <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'center', width:'35px', height:'35px',bgcolor:'silver', borderRadius:'50%',mr:1}}>
+            <Typography  variant="body1" color="initial">2</Typography>
+            </Box>
+          <Typography variant="body1" color="initial">John Doe</Typography>
+          </Box>
+          <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 2%</Typography>
+        </Box>
+        <Box>
+          <Typography  variant="body1" color="initial">Score</Typography>
+        <Typography component={'span'} variant="body2" color="success">95%</Typography>
+        </Box>
       </Box>
     </Card>
     <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">Harry David</Typography>
+     <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Box>
+          <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'center', width:'35px', height:'35px',bgcolor:'#CD7F32', borderRadius:'50%',mr:1}}>
+            <Typography  variant="body1" color="initial">3</Typography>
+            </Box>
+          <Typography variant="body1" color="initial">Harry David</Typography>
+          </Box>
+          <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 3%</Typography>
+        </Box>
+        <Box>
+          <Typography  variant="body1" color="initial">Score</Typography>
+        <Typography component={'span'} variant="body2" color="success">93%</Typography>
+        </Box>
       </Box>
     </Card>
     <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">Jonathon Peter</Typography>
+      <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Box>
+          <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'center', width:'35px', height:'35px',bgcolor:'gray', borderRadius:'50%',mr:1}}>
+            <Typography  variant="body1" color="initial">4</Typography>
+            </Box>
+          <Typography variant="body1" color="initial">Jonathon Peter</Typography>
+          </Box>
+          <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 4%</Typography>
+        </Box>
+        <Box>
+          <Typography  variant="body1" color="initial">Score</Typography>
+        <Typography component={'span'} variant="body2" color="success">90%</Typography>
+        </Box>
       </Box>
     </Card>
     <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">Sarah Viktor</Typography>
+      <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Box>
+          <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>
+
+            <Box sx={{display:'flex' , justifyContent:'center', alignItems:'center', width:'35px', height:'35px',bgcolor:'gray', borderRadius:'50%',mr:1}}>
+            <Typography  variant="body1" color="initial">5</Typography>
+            </Box>
+          <Typography variant="body1" color="initial">Sarah Viktor</Typography>
+          </Box>
+          <Typography sx={{ml:1}} component={'span'} variant="body2" color="#444">Top 5%</Typography>
+        </Box>
+        <Box>
+          <Typography  variant="body1" color="initial">Score</Typography>
+        <Typography component={'span'} variant="body2" color="success">88%</Typography>
+        </Box>
       </Box>
     </Card>
-    <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
-      <Box>
-        <Typography variant="body1" color="initial">Tom Martin</Typography>
-      </Box>
-    </Card>
+    
 
   </Box>
 </Modal>
