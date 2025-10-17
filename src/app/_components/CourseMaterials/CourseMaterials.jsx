@@ -109,13 +109,13 @@ export default function CourseMaterials() {
       const handleOpenTasks = () => setOpenTasks(true);
       const handleCloseTasks = () => setOpenTasks(false);
     
-        const [openQuestion, setOpenQuestion] = React.useState(false);
-      const handleOpenQuestion = () => setOpenQuestion(true);
-      const handleCloseQuestion = () => setOpenQuestion(false);
+      //   const [openQuestion, setOpenQuestion] = React.useState(false);
+      // const handleOpenQuestion = () => setOpenQuestion(true);
+      // const handleCloseQuestion = () => setOpenQuestion(false);
     
-        const [openLeader, setOpenLeader] = React.useState(false);
-      const handleOpenLeader = () => setOpenLeader(true);
-      const handleCloseLeader = () => setOpenLeader(false);
+      //   const [openLeader, setOpenLeader] = React.useState(false);
+      // const handleOpenLeader = () => setOpenLeader(true);
+      // const handleCloseLeader = () => setOpenLeader(false);
     
 
   return (
@@ -547,7 +547,102 @@ export default function CourseMaterials() {
                     </List>
         </AccordionDetails>
       </Accordion>
-      
+       <Modal
+        open={openTasks}
+        onClose={handleCloseTasks}
+        aria-labelledby="modal-questions-title"
+        aria-describedby="modal-answers-description"
+      >
+        <Box sx={style}>
+          <Box  sx={{position:'static'}}>
+          <Typography sx={{mb:2}} id="modal-questions-title" variant="h5" component="h2">
+            Course Overview - Quiz
+          </Typography>
+
+                        <Box  sx={{position:'absolute' , top:10, right:0}}>
+                          <Button onClick={handleCloseTasks}> <SpeedDialIcon></SpeedDialIcon></Button>
+                        </Box>
+          </Box>
+
+        <Box sx={{ width: '100%' }}>
+      <Stepper activeStep={activeStep}>
+        {steps.map((label, index) => {
+          const stepProps = {};
+          const labelProps = {};
+
+          return (
+            <Step key={label} {...stepProps}>
+              <StepLabel {...labelProps}>{label}</StepLabel>
+            </Step>
+          );
+        })}
+      </Stepper>
+      {activeStep === steps.length ? (
+        <React.Fragment>
+          <Typography sx={{ mt: 2, mb: 1 }}>
+            Stay positive and keep learning 💪🏻👌
+          </Typography>
+          <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+            <Box sx={{ flex: '1 1 auto' }} />
+            <Button onClick={handleReset}>Reset</Button>
+            <Button onClick={handleCloseTasks}>Close</Button>
+          </Box>
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+        <Box sx={{ mt: 2, mb: 1 }}>
+          {activeStep === 0 ? (
+            <>
+              <Typography sx={{my:2}} variant="body1" color="initial"> Every mistake is a step forward 💪🏻</Typography>
+              <Typography sx={{mb:1}} variant="h6" color="initial"> What's the largest country in the world?</Typography>
+              <Box>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Russia</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Austrilia</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">USA</Button>
+              </Box>
+            </>
+          ) : activeStep === 1 ? (
+            <>
+            <Typography sx={{my:2}} variant="body1" color="initial"> Small progress is still progress 😉</Typography>
+            <Typography sx={{mb:1}} variant="h6" color="initial"> What's the fastest land animal?</Typography>
+              <Box>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Tiger</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Cheetah</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Lion</Button>
+              </Box></>
+          ) : activeStep === 2 ? (
+            <>
+            <Typography sx={{my:2}} variant="body1" color="initial"> You're smarter than you think! 🧠</Typography>
+            <Typography sx={{mb:1}} variant="h6" color="initial"> What's the name of Apple's voice assistant?</Typography>
+              <Box>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Gemini</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Cortana</Button>
+                <Button onClick={handleNext} sx={{width:'100%', mb:2}} variant="contained" color="initial">Siri</Button>
+              </Box></>
+          ):null}
+        </Box>
+
+          <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
+            <Button
+            color='info' variant='contained'
+              disabled={activeStep === 0}
+              onClick={handleBack}
+              sx={{ mr: 1 }}
+            >
+              Previous Question
+            </Button>
+            <Box sx={{ flex: '1 1 auto' }} />
+
+            <Button color='success' variant='contained' onClick={handleNext}>
+              {activeStep === steps.length - 1 ? 'Finish' : 'Next Question'}
+            </Button>
+          </Box>
+        </React.Fragment>
+      )}
+    </Box>
+
+        </Box>
+      </Modal>
     </Box>
     
     </>

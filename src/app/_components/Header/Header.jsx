@@ -392,7 +392,7 @@ export default function Header() {
         </Box>
       </Box>
     </Card>
-    <Card  sx={{width:'100%', mb:2, p:2}} elevation={5}>
+    <Card  sx={{display:{xs:'none',md:'flex'},width:'100%', mb:2, p:2}} elevation={5}>
       <Box sx={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
         <Box>
           <Box sx={{display:'flex', justifyContent:'center', alignItems:'center'}}>

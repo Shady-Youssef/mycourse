@@ -38,7 +38,7 @@ export default function BreadcrumbHero() {
   return (
     <>
     <Box component={'section'} sx={{bgcolor:'#f5f9fa', px:4}}>
-       <Container maxWidth sx={{p:4}}>
+       <Container maxWidth sx={{p:2}}>
       <Breadcrumbs
         separator={<NavigateNextIcon fontSize="small" />}
         aria-label="breadcrumb"
