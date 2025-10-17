@@ -128,6 +128,7 @@ export default function Header() {
     sx={{
       width:  '100%',
       borderRadius: 2,
+      ":hover":{cursor:'pointer'}
     }}
   />
 
