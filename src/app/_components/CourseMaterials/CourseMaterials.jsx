@@ -124,7 +124,7 @@ export default function CourseMaterials() {
         <Box sx={{mt:8, mb:3}}>
             <Typography sx={{mb:3, display:{xs:'none', md:'flex'}}} component={'h2'} variant="h4" color="initial">Course Materials</Typography>
 
-                    <Card elevation={5} sx={{p:3}}>
+                    <Card elevation={5} sx={{p:3, borderRadius:'25px'}}>
             <Grid container spacing={2}>
                 <Grid size={{xs:12, md:6}}>
 

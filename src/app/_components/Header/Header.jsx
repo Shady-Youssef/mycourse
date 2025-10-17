@@ -151,12 +151,14 @@ export default function Header() {
                     transition: 'all 0.3s ease, box-shadow 0.3s ease',
                     boxShadow:6,
                     p:1,
+                    borderRadius:'25px',
                     ':hover': {
                     transform: 'scale(1.2)',
                     cursor:'pointer',
                     boxShadow: 10,
                     bgcolor:'#000000de',
-                    color:'#fff'
+                    color:'#fff',
+                    // borderRadius:'25px'
                     }
                 }}
                 >
@@ -215,6 +217,7 @@ export default function Header() {
                 sx={{
                     transition: 'all 0.3s ease, box-shadow 0.3s ease',
                     boxShadow:6,
+                    borderRadius:'25px',
                     p:1,
                     ':hover': {
                     transform: 'scale(1.2)',
@@ -277,6 +280,7 @@ export default function Header() {
                 sx={{
                     transition: 'all 0.3s ease, box-shadow 0.3s ease',
                     boxShadow:6,
+                    borderRadius:'25px',
                     p:1,
                     ':hover': {
                     transform: 'scale(1.2)',
@@ -421,7 +425,7 @@ export default function Header() {
 
                     <Grid  size={{sm:12, md:4}}>
                 <Box sx={{display:{xs:'none', md:'flex', flexDirection:'column'}}}  component={'aside'}>
-                <Box  sx={{p:2}}>
+                <Box  sx={{p:2,mt:3}}>
                     <Typography  variant="h4" color="initial">Topics for This Course</Typography>
                 </Box>
                   {/* Progress Bar */}
